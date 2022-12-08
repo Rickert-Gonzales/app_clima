@@ -1,1 +1,381 @@
+.App {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   color: white;
+}
+/* Primera Sección: Seccion del reproductor ,usical y los datos del
+   clima de un determinado pais */
 
+/* CSS de selections */
+.seccionOne {
+   width: 100%;
+   height: 60%;
+   display: flex;
+}
+.seccionTwo {
+   width: 100%;
+   height: 37%;
+}
+
+/* CSS de las seccion SectionOne */
+.seccionOne .melody {
+   width: 35%;
+}
+.seccionOne .info {
+   width: 65%;
+}
+.seccionOne .info .contentInfo {
+   width: 100%;
+   height: 90%;
+   padding: 24px;
+   background-color: rgba(221, 231, 240, 0.84);
+   border-radius: 12px;
+}
+.melody .rep {
+   display: flex;
+   align-items: center;
+}
+/* CSS del icono */
+.iconMelody {
+   font-size: 24px;
+   padding-right: 14px;
+}
+/* CSS del Select */
+.selectCountry {
+   height: 42px;
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   padding-bottom: 18px;
+}
+.selectCountry label {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   text-decoration-line: underline;
+   color: #4b4b4b;
+}
+.selectCountry select {
+   padding-left: 12px;
+   border: none;
+   background-color: transparent;
+   color: #4b4b4b;
+}
+
+/* CSS del contenedor de datos */
+.contentOne,
+.contentTwo {
+   display: flex;
+   justify-content: space-between;
+}
+.headCard {
+   padding: 0;
+   font-weight: 500;
+   font-size: 16px;
+   color: #54aded;
+   padding-bottom: 4px;
+}
+.hum_pres {
+   height: auto;
+   display: flex;
+   flex-direction: column;
+}
+.humPre p {
+   font-weight: 500;
+   font-size: 14px;
+   color: #54aded;
+}
+.tempG {
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.tempG .datos {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   color: #4b4b4b;
+}
+.tempG .datos p {
+   font-weight: 600;
+   font-size: 18px;
+   color: #54aded;
+}
+.tempG span {
+   font-weight: 400;
+   font-size: 11px;
+   color: #4b4b4b;
+}
+.h2t {
+   font-size: 32px;
+}
+.lon_lat {
+   padding-top: 4px;
+   display: flex;
+   gap: 18px;
+}
+.lon_lat p {
+   padding: 0;
+   font-weight: 500;
+   font-size: 12px;
+   color: #54aded;
+}
+.lon_lat span {
+   font-weight: 300;
+   font-size: 12px;
+}
+
+/* CSS de la segunda seccion de datos */
+.contentTwo h2 {
+   color: #54aded;
+   font-size: 18px;
+}
+.icons {
+   font-size: 24px;
+}
+.icons2 {
+   font-size: 36px;
+}
+.contentTwo .contD {
+   width: 100%;
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+   margin-top: 24px;
+   margin-bottom: 4px;
+}
+.contentTwo .contD .elemnt {
+   display: flex;
+   align-items: center;
+}
+.contentTwo .contD .elemnt.e2 {
+   align-items: flex-end;
+}
+.contentTwo .contD .elemnt .dt {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-right: 8px;
+}
+.contentTwo .contD .elemnt .dt p {
+   font-weight: 500;
+   font-size: 12px;
+   color: #54aded;
+}
+
+/* Seccion Dos */
+/* CSS del los datos de climas */
+.seccionTwo {
+   padding-top: 46px;
+   display: flex;
+   justify-content: space-between;
+}
+.dataSeccionTwo {
+   width: 50%;
+   display: flex;
+}
+/* CSS del clima */
+.cardClima {
+   width: 200px;
+   background-color: rgba(255, 255, 255, 0.5);
+   color: white;
+   border-radius: 10px;
+   padding: 12px;
+}
+.clima p {
+   font-size: 16px;
+   font-weight: 500;
+}
+.clima h2 {
+   font-size: 32px;
+}
+.clima span {
+   font-size: 14px;
+}
+.climaIcon {
+   display: flex;
+   align-items: flex-end;
+   padding-top: 14px;
+   justify-content: flex-end;
+}
+.nubeIcn {
+   font-size: 54px;
+}
+.climaDatoIcon {
+   padding-left: 10px;
+}
+.climaDatoIcon p {
+   font-size: 12px;
+}
+/* CSS temperatura */
+.cardDataCli {
+   width: 200px;
+   background-color: transparent;
+   color: white;
+   border-radius: 10px;
+   padding: 12px;
+   margin-left: 42px;
+}
+.cardDataCli p {
+   font-size: 24px;
+   font-weight: 400;
+}
+.cardDataCli h2 {
+   font-size: 74px;
+   font-weight: 800;
+}
+.cardDataCli span {
+   font-size: 26px;
+   font-weight: 300;
+}
+/* CSS creditos */
+.creditos {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   align-items: flex-end;
+}
+.creditos p {
+   font-size: 14px;
+   font-weight: 300;
+}
+.creditos p:nth-child(3) {
+   padding-top: 34px;
+}
+
+/* Fin Seccion Dos */
+.filtro {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+}
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+}
+
+footer {
+   width: 100%;
+   font-size: 14px;
+   line-height: 17px;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   color: white;
+}
+
+/* Media query */
+@media only screen and (min-width: 1200px) {
+   .seccionOne,
+   .seccionTwo {
+      width: 80%;
+      margin: 0 auto;
+   }
+   .seccionOne .melody {
+      width: 50%;
+   }
+   .seccionOne .info .contentInfo {
+      height: auto;
+   }
+   .seccionTwo {
+      height: auto;
+   }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+   .seccionOne,
+   .seccionTwo {
+      width: 80%;
+      margin: 0 auto;
+   }
+   .seccionOne .melody {
+      width: 50%;
+   }
+   .seccionOne .info .contentInfo {
+      height: auto;
+   }
+   .seccionTwo {
+      height: auto;
+   }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+   .seccionOne,
+   .seccionTwo {
+      width: 80%;
+      margin: 0 auto;
+   }
+   .seccionOne .melody {
+      width: 50%;
+   }
+   .seccionOne .info .contentInfo {
+      height: auto;
+   }
+   .seccionTwo {
+      height: auto;
+   }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+   .seccionOne,
+   .seccionTwo {
+      width: 100%;
+      margin: 0 auto;
+   }
+   .seccionOne .melody {
+      width: 50%;
+   }
+   .seccionOne .info .contentInfo {
+      height: auto;
+   }
+   .seccionTwo {
+      height: auto;
+   }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+   .seccionOne,
+   .seccionTwo {
+      width: 80%;
+      margin: 0 auto;
+   }
+   .seccionOne .melody {
+      width: 60%;
+   }
+   .seccionOne .info .contentInfo {
+      height: auto;
+   }
+   .seccionTwo {
+      height: auto;
+   }
+}
